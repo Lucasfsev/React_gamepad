@@ -1,0 +1,31 @@
+#gamepad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  width: 100px;
+
+  #up {
+    grid-column: 2;
+  }
+
+  #left {
+    grid-column: 1;
+  }
+
+  > * {
+    cursor: pointer;
+  }
+}
+
+#area {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-image: url('/public/pexels-photo-235985.jpeg');
+  border: 1px solid gray;
+
+  #player {
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+}
